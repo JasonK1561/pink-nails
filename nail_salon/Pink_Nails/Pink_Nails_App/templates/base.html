@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Test123</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <!-- {# Custom CSS #} -->
+    <link rel="stylesheet" href="{% static 'css/Pink_Nails.css' %}">
+  </head>
+  <body>
+
+    <section class="Navbar-section">
+      <div class="main-nav container">
+        <ul class="nav">
+          <li class="nav-item nav-logo">
+            <a class="nav-link" href="https://www.google.com/"
+            target="_blank">Pink Nails & Spa</a>
+          </li>
+          <li class="nav-item justify-content-end">
+            <a class="nav-link" href="https://www.google.com/"
+            target="_blank">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <p>Hello Worlds</p>
+
+    {% block body_block %}
+
+
+
+
+
+
+    {% endblock %}
+  </body>
+</html>
