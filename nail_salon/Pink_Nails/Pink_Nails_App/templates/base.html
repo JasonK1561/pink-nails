@@ -4,35 +4,90 @@
   <head>
     <meta charset="utf-8">
     <title>Test123</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
 
     <!-- {# Custom CSS #} -->
     <link rel="stylesheet" href="{% static 'css/Pink_Nails.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/css/grid.css' %}">
+    <link rel='stylesheet' href="{% static 'vendors/css/normalize.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Zhi+Mang+Xing&display=swap"
+    rel="stylesheet">
   </head>
   <body>
+  <header>
+    <nav>
+      <div class="row">
+          <!-- <img src="{% static 'img/berlin.jpg' %}" alt="Logo" class="main-logo"> -->
+          <div class="logo">
+            <a href="#" class='name-logo'>Pink Nails & Spa</a>
+          </div>
 
-    <section class="Navbar-section">
-      <div class="main-nav container">
-        <ul class="nav">
-          <li class="nav-item nav-logo">
-            <a class="nav-link" href="https://www.google.com/"
-            target="_blank">Pink Nails & Spa</a>
-          </li>
-          <li class="nav-item justify-content-end">
-            <a class="nav-link" href="https://www.google.com/"
-            target="_blank">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
+          <ul>
+            <li><a href="https://www.google.com/" target="_blank">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
       </div>
+    </nav>
+
+
+  </header>
+  <div class="rotating-hero">
+
+  </div>
+    <!-- <section class="rotating-hero-section">
+
+    </section> -->
+
+
+    <section class='about-us-section'>
+      <div class="row">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. <br> Excepteur sint occaecat cupidatat non
+           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <div class="service-btn">
+          <a href="#"><strong>View Services</strong></a>
+        </div>
+
+      </div>
+
+
     </section>
-    <p>Hello Worlds</p>
+
+
+    <section class='gallery-section'>
+      <ul class=gallery-show-case>
+        <li><figure class='showcase-photo'><img src="{% static 'img/1.jpg' %}"></figure></li>
+        <li><figure class='showcase-photo'><img src="{% static 'img/1.jpg' %}"></figure></li>
+        <li><figure class='showcase-photo'><img src="{% static 'img/1.jpg' %}"></figure></li>
+        <li><figure class='showcase-photo'><img src="{% static 'img/1.jpg' %}"></figure></li>
+      </ul>
+
+      <!-- <ul class=gallery-show-case>
+        <li><figure class='showcase-photo'><img src="{% static 'img/1.jpg' %}"></figure></li>
+        <li><figure class='showcase-photo'><img src="{% static 'img/1.jpg' %}"></figure></li>
+        <li><figure class='showcase-photo'><img src="{% static 'img/1.jpg' %}"></figure></li>
+        <li><figure class='showcase-photo'><img src="{% static 'img/1.jpg' %}"></figure></li>
+      </ul> -->
+
+    </section>
+
+
+    <section class='contact-us-section'>
+      <h1>Hi</h1>
+    </section>
+
+
+
+
+
 
     {% block body_block %}
 

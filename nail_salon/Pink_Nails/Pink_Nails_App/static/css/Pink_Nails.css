@@ -1,21 +1,174 @@
+/* -------- BASIC SETUP ---------*/
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.main-nav{
-background-color: yellow;
-position: relative;
+.clear-fix:after{
+  content: "";
+  display: table;
+  clear: both;
 }
 
-
-
-.nav-option{
-  position: absolute;
-  right: 0px;
+html{
+  color: black;
+  font-family:'Lato', 'Arial', 'sans-seif';
+  font-weight:300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
 }
 
-p{
-  background-color: green;
+/* -------- RE-USABLE ---------*/
+.row{
+    max-width: 1140px;
+    margin: 0 auto 0 auto;
+}
+
+/* -------- HEADER ---------*/
+header{
+
+}
+
+.logo{
+  float: left;
+  margin-top: 35px;
+}
+.name-logo{
+  font-family: 'Zhi Mang Xing', cursive;
+  font-family: 'Caveat', cursive;
+  text-decoration: none;
+  font-size: 300%;
+  color: #fd79a8;
+}
+.main-logo{
+  height: 108px;
+  float: left;
+  margin-top: 20px;
+}
+
+nav ul{
+  float: right;
+  list-style-type: none;
+  margin-top: 60px;
+}
+
+nav li{
+  display: inline-block;
+  margin-left: 30px;
+}
+
+nav ul a:link,
+nav ul a:visited{
+  text-decoration: none;
+  font-size: 130%;
+  color: #2d3436;
+  border-bottom: 3px solid transparent;
+}
+
+nav ul a:hover,
+nav ul a:active{
+  border-bottom: 3px solid #fd79a8;
+  transition: border 0.2s;
+}
+
+.rotating-hero{
+  background-image: url(img/header.jpg);
+  height: 50vh;
+  margin-top: 10px;
+  background-position: center;
+}
+
+/* -------- ABOUT US ---------*/
+.about-us-section{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /* background-color: #f1f2f6; */
+  /* background-color: red; */
+}
+/* .about-us-section h2{
+  float: left;
+  margin-top: 55px;
+  margin-left: 15%;
+  width: 15%;
+  color: #fd79a8;
+} */
+
+.about-us-section h2{
+  text-align: center;
+  margin-top: 0px;
+  padding: 0;
+}
+
+.about-us-section p{
+  width: 70%;
+  float: right;
+  margin-right:15%;
+  /* color:red; */
+  margin-top: 10px;
+}
+
+.service-btn{
+  margin-top: 200px;
+  text-align: center;
+}
+
+.service-btn a:link,
+.service-btn a:visited{
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #fedde9;
+  /* font-weight: 200px; */
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.service-btn a:hover,
+.service-btn a:active{
+  background-color: #fd9abe;
+  transition: .3s
+  /* font-weight: 200px; */
+}
+/* -------- GALLERY ---------- */
+
+.gallery-section{
+  padding: 0;
+}
+.gallery-show-case{
+  list-style: none;
+  width: 100%;
+}
+
+.gallery-show-case li{
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.showcase-photo{
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.showcase-photo img{
+  width: 100%;
+  height: auto;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+  opacity: 0.7;
+}
+
+.showcase-photo img:hover{
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+/*--------- CONTACT US --------- */
+.contact-us-section{
+  background-color: blue;
 }
