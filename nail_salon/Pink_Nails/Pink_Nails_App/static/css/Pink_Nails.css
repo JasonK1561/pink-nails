@@ -18,6 +18,7 @@ html{
   font-weight:300;
   font-size: 20px;
   text-rendering: optimizeLegibility;
+  background-color: #fff8cd;
 }
 
 /* -------- RE-USABLE ---------*/
@@ -117,18 +118,19 @@ nav ul a:active{
 .service-btn a:link,
 .service-btn a:visited{
   text-decoration: none;
-  border: 1px solid black;
+  border: 3px solid #fdbcd4;
   padding: 10px;
   border-radius: 20px;
   background-color: #fedde9;
   /* font-weight: 200px; */
   font-size: 20px;
   font-weight: 400;
+  color: #190009;
 }
 
 .service-btn a:hover,
 .service-btn a:active{
-  background-color: #fd9abe;
+  background-color: #fdbcd4;
   transition: .3s
   /* font-weight: 200px; */
 }
@@ -170,5 +172,9 @@ nav ul a:active{
 
 /*--------- CONTACT US --------- */
 .contact-us-section{
-  background-color: blue;
+  background-color: #3c4245;
+}
+
+.contact-us-section p{
+  color: red;
 }
